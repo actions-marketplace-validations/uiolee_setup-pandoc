@@ -225,7 +225,7 @@ function getDownloadFileName(platform: Platform, version: string): string {
   switch (platform) {
     case "linux": return `pandoc-${encodedVersion}-linux-amd64.tar.gz`;
     case "windows": return `pandoc-${encodedVersion}-windows-x86_64.zip`;
-    case "mac": return `pandoc-${encodedVersion}-macOS.pkg`;
+    case "mac": return `pandoc-${encodedVersion}-x86_64-macOS.pkg`;
     default: return assertNever(platform);
   }
 }
